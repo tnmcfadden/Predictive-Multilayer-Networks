@@ -17,4 +17,5 @@ Required data files
 -	Elevation map: elev_map_sim.tif
 
 Instructions
+
 Beginning with the RCode_2_Habitat_metrics script, run the scripts in order to create and analyze the multilayer network. By changing the land cover input file and re-running the entire pipeline in order, one can evaluate the effects of changing land-use scenarios on the robustness of the multilayer network.
