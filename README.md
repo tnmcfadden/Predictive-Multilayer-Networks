@@ -33,8 +33,8 @@ Comparing PMN structure and stability across scenarios
 - *RCode_6_Comparing_scenarios.R* - contains code for comparing metrics across PMNs and producing figure 5
 
 #### Required data files:
-- results csv
+- results table for all 21 PMNs: *results_all_scenarios.csv*
 
 #### Instructions:
-
+The file *RCode_6_Comparing_scenarios.R* contains codes for comparing PMN metrics across land-use change scenarios. 
 
