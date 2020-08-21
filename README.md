@@ -4,7 +4,7 @@ This repository contains data and R scripts accompanying McFadden and Dirzo (sub
 Building and analyzing a PMN
 -
 
-## R Scripts:
+#### R Scripts:
 - RCode_1_Landscape_simulation.R - contains code for simulating the starting landscape and 20 deforestation and reforestation scenarios
 - RCode_2_PMN_creation.R - contains code for building a PMN and calculating connectance
 - RCode_3_Betweenness.R - contains code for calculating betweenness centrality
