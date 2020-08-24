@@ -15,7 +15,7 @@ Building and analyzing a PMN
 #### Required data files for PMN creation:
 -	Land cover map: *starting_landscape.tif*, or other land cover scenario of interest (created in RCode_1_Landscape_simulation.R)
 -	Elevation map: *elev_map_sim.tif*
-- Null network for connectance metric: *null_edge_list.csv*
+- Null network files for connectance metric: *null_edges_1.csv*, *null_edges_2.csv*, *null_edges_3.csv* (the data was separated into 3 files to reduce file size)
 
 
 #### Instructions:
