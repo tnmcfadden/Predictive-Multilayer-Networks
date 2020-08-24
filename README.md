@@ -22,10 +22,6 @@ Building and analyzing a PMN
 The file *RCode_2_PMN_creation.R* contains a streamlined pipeline for building a PMN using the three required input files specified above. By changing the land cover input file and re-running the script, one can create additional PMNs. PMN betweenness and robustness can be calculated with RCode scripts 3 and 4. RCode script 5 contains code for calculating traditional forest fragmentation metrics, though these are provided simply for context.
 
 
-#### Additional files:
-- Results folder contains example outputs created by RCode scripts 2-5. Some values may not exactly match those from the paper because these data were created using separate runs of the model.
-
-
 Comparing PMN structure and stability across scenarios
 -
 
