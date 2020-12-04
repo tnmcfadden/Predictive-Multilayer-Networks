@@ -5,11 +5,11 @@
 ###
 ### Code accompanying manuscript: 
 ### McFadden TN, Dirzo R. Harnessing multilayer networks to predict 
-### metacommunity-wide responses to global environmental change.
-### Submitted to Nature Ecology & Evolution.
+### metacommunity responses to global environmental change.
+### Submitted to Ecology Letters.
 ###
 ### About this script:
-###   This script creates a simulated fragmented tropical landscape containing four 
+###   This script creates a simulated fragmented landscape containing four 
 ###   land cover types and contains code for how to create a simulated elevation profile, though
 ###   the actual elevation profile used is provided as a separate file. Code is also
 ###   provided for simulating the 20 deforestation and reforestation scenarios.
@@ -62,7 +62,7 @@ writeRaster(rs, "starting_landscape.tif", format = "GTiff")
 ########################################
 
 #### This code was used to create a realistic map of elevation. However, it is based on random
-# number gereration, the exact map is not reproducible here. 
+# number gereration, so the exact map is not reproducible here. 
 sim <- grf(10000, grid="reg", cov.pars=c(1, 0.25))
 image(sim, col=gray(seq(1, .1, l=30)))
 
