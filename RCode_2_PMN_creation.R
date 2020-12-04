@@ -5,18 +5,18 @@
 ###
 ### Code accompanying manuscript: 
 ### McFadden TN, Dirzo R. Harnessing multilayer networks to predict 
-### metacommunity-wide responses to global environmental change.
-### Submitted to Nature Ecology & Evolution.
+### metacommunity responses to global environmental change.
+### Submitted to Ecology Letters.
 ###
 ###
 ### About this script:
 ###   This script contains 8 sections constituting a single pipeline for building
 ###   a Predictive Multilayer Network from land cover and elevation input data,
-###   and calculating network conectance. Once you have confirmed that all parameters
+###   and for calculating network connectance. Once you have confirmed that all parameters
 ###   are correct, the entire script can be run at once in the 'Jobs' section of RStudio.
 ###   The process of running this script will take up to several hours.
 ###
-###   Code for calculating additional network metrics (betweenness and robustness) 
+###   Code for calculating additional network metrics (betweenness centrality and robustness) 
 ###   is provided in separate R scripts.
 ###
 ###   Prior to running this script:
@@ -276,7 +276,7 @@ writeRaster(r4, "primary_forest_interior.tif", format = "GTiff") # primary fores
 ### About this section:
 ###   This section imports land cover and habitat metric data (produced in the 
 ###   Landscape simulation script and Habitat metric section of this script), and uses habitat 
-###   preferences of hypotehtical species to predict their probability of occurrence across
+###   preferences of seven hypothetical species to predict their probability of occurrence across
 ###   the landscape
 #################################################_
 
@@ -332,7 +332,7 @@ h2 <- setValues(h2, hummer2.matrix)
 plot(h2)
 
 
-# Bumblebee - generalist be needs forest for nesting
+# Bumblebee - generalist bee, needs forest for nesting
 hab.metrics1$bumblebee <- pmax((0.9 / (1 + exp(1)^(-20*(hab.metrics1$primary.forest500 - 0.1)))),
                                (0.9 / (1 + exp(1)^(-10*(hab.metrics1$forest.cover500 - 0.5))))
 ) # selects the greater value of two logistic relationships
@@ -768,6 +768,7 @@ write.csv(joined.edges, export.file.name, row.names = FALSE)
 # End parallel computing
 stopImplicitCluster()
 
+#################################################_
 #####
 ##### 6. Interlayer Links #####
 ###
