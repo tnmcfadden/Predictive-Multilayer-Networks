@@ -67,8 +67,6 @@ colSums(adj)
 ##### Centrality via igraph #####
 ##################################-
 
-# https://www.r-bloggers.com/network-centrality-in-r-an-introduction/
-# https://igraph.org/r/doc/
 
 graph <- induced_subgraph(g, vids = V(g)[1:length(V(g))])
 
