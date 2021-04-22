@@ -6,7 +6,7 @@
 ### Code accompanying manuscript: 
 ### McFadden TN, Dirzo R. Harnessing multilayer networks to predict 
 ### metacommunity responses to global environmental change.
-### Submitted to Ecology Letters.
+### Submitted to Ecology.
 ###
 ###
 ### About this script:
