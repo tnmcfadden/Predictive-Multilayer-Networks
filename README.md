@@ -1,5 +1,5 @@
 # Predictive-Multilayer-Networks (PMNs)
-This repository contains data and R scripts accompanying McFadden and Dirzo (submitted to Ecology) Harnessing multilayer networks to predict metacommunity responses to global environmental change. 
+This repository contains data and R scripts accompanying McFadden and Dirzo (submitted to Ecological Monographs) Harnessing multilayer networks to predict metacommunity responses to global environmental change. 
 
 Building and analyzing a PMN
 -
